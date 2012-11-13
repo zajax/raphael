@@ -1,4 +1,6 @@
 node_modules/
+eve.js
+almond.js
 raphael.pro-min.js
 raphael.pro.js
 raphael.js
