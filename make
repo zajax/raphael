@@ -13,7 +13,7 @@ var setup = {
             svg: "raphael.svg.js",
             vml: "raphael.vml.js",
             eve: "eve.js",
-            copy: "copy.js"
+            copy: "copy.js",
             fakeDefine: "fakedefine.js"
         },
         output: {
