@@ -207,7 +207,7 @@ define(['./raphael.core'], function (R) {
             }
             if (type != "none") {
                 var pathId = "raphael-marker-" + type,
-                    markerId = "raphael-marker-" + se + type + w + h + (attrs.stroke || "").replace(/\(|,|\)/g, "");
+                    markerId = "raphael-marker-" + se + type + w + h + (attrs.stroke || "").replace(/[\s\(\)]/g, "").replace(/[#,%\.]/g, "-");
                 if (!R._g.doc.getElementById(pathId)) {
                     p.defs.appendChild($($("path"), {
                         "stroke-linecap": "round",
